@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tabacaria Ceará · Catálogo de exemplo | ARB Digital</title>
+<meta name="description" content="Catálogo de exemplo feito pela ARB Digital: busca, filtro por marca, ordenação por preço e pedido montado para o WhatsApp.">
+<meta name="theme-color" content="#0A0907">
+<link rel="icon" type="image/webp" href="img/catalogo/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Cinzel:wght@500;700&display=swap">
+<link rel="stylesheet" href="css/catalogo.css">
+</head>
+<body>
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateT">
+  <div class="box">
+    <img src="img/catalogo/logo.webp" alt="Tabacaria Ceará">
+    <p class="gt" id="gateT">Você tem 18 anos ou mais?</p>
+    <p>Este catálogo mostra produtos de tabacaria. A venda é proibida para menores de 18 anos.</p>
+    <div class="btns">
+      <button type="button" class="btn btn-gold btn-block" id="gateYes">Sim, tenho 18 anos ou mais</button>
+      <button type="button" class="btn btn-ghost btn-block" id="gateNo">Sou menor de 18 anos</button>
+    </div>
+  </div>
+</div>
+
+<a class="pular" href="#inicio">Pular para o conteúdo</a>
+<nav class="demo" aria-label="Site da ARB Digital">
+  <span>Catálogo de exemplo feito pela ARB Digital. Preços e estoque de demonstração.</span>
+  <a href="index.html">Início</a>
+  <a href="grupo.html">Grupo ARB</a>
+  <a href="catalogo.html" aria-current="page">Catálogo</a>
+  <a href="contato.html">Contato</a>
+</nav>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="Tabacaria Ceará, início"><img src="img/catalogo/logo.webp" alt="Tabacaria Ceará · Desde 1974"></a>
+    <label class="search">
+      <span class="sr">Buscar no catálogo</span>
+      <svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"/></svg>
+      <input id="q" type="search" placeholder="Buscar palha, seda ou essência" autocomplete="off">
+    </label>
+    <button type="button" class="cartbtn" id="openCart" aria-label="Abrir pedido">
+      <svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M230.14,58.87A8,8,0,0,0,224,56H62.68L56.6,22.57A8,8,0,0,0,48.73,16H24a8,8,0,0,0,0,16h18L67.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,160,204a28,28,0,1,0,28-28H91.17a8,8,0,0,1-7.87-6.57L80.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,230.14,58.87ZM104,204a12,12,0,1,1-12-12A12,12,0,0,1,104,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,200,204Zm4-74.57A8,8,0,0,1,196.1,136H77.22L65.59,72H214.41Z"/></svg>
+      <span class="label">Pedido</span>
+      <span class="badge" id="badge" data-n="0">0</span>
+    </button>
+  </div>
+</header>
+
+<nav class="dept" aria-label="Departamentos"><div class="wrap"><div class="deptrow" id="dept"></div></div></nav>
+
+<main id="inicio">
+  <div id="home">
+  <section class="hero">
+    <img class="mark" src="img/catalogo/logo-grande.webp" alt="" aria-hidden="true">
+    <svg class="sertao" viewBox="0 0 1200 150" preserveAspectRatio="none" aria-hidden="true"><path d="M0 92c140-30 236 14 360 2s188-30 300-30 232 28 330 22 150-14 210-22v86H0z" fill="#8A4F2A" opacity=".34"/><path d="M0 120c160-18 250 8 380 2s210-16 330-16 220 16 300 12 130-8 190-12v44H0z" fill="#D9752F" opacity=".20"/></svg>
+    <svg class="cactos" viewBox="0 0 1200 150" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#FDECD0" stroke-width="11" stroke-linecap="round" opacity=".13"><path d="M140 150V58M140 104h-28V74M140 92h28V52"/><path d="M1058 150V44M1058 96h32V66M1058 82h-30V56"/></g></svg>
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Feira Central de Ceilândia · Brasília</div>
+        <h1>Tabacaria de verdade, <span class="goldtext">desde 1974</span>.</h1>
+        <p>Palha, seda, rapé e narguilé com preço de feira. Escolha no catálogo, monte o pedido e envie pelo WhatsApp. Retire na feira ou receba em Brasília.</p>
+        <div class="cta">
+          <a class="btn btn-gold" href="#palhas">Ver palhas e fumo</a>
+          <a class="btn btn-ghost" href="#narguile">Ver narguilé</a>
+        </div>
+        <div class="perks">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>Variedade e preço baixo</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg>Entrega em Brasília</span>
+        </div>
+      </div>
+      <div class="showcase" id="showcase"></div>
+    </div>
+  </section>
+    <section class="wrap homecats" aria-label="Compre por categoria">
+      <h2 class="sec">Compre por categoria</h2>
+      <div class="tiles" id="tiles"></div>
+    </section>
+    <section class="wrap"><button type="button" class="promo" id="promo"></button></section>
+    <div id="shelves"></div>
+  </div>
+
+  <div id="plp" hidden>
+    <div class="wrap plpwrap">
+      <nav class="crumbs" aria-label="Você está em"><a href="#inicio" id="crHome">Início</a><span>›</span><b id="crCur"></b></nav>
+      <div class="plphead"><h1 id="plpTitle"></h1><span class="count" id="count"></span></div>
+      <div class="subbar">
+        <div class="chips" id="sub" role="group" aria-label="Filtro"></div>
+        <label><span class="sr">Ordenar</span><select class="sort" id="sort"><option value="rel">Destaques</option><option value="low">Menor preço</option><option value="high">Maior preço</option></select></label>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><img src="img/catalogo/logo.webp" alt="Tabacaria Ceará">Palha, seda, rapé e narguilé. Desde 1974.</div>
+    <div><b>Loja</b>Feira Central de Ceilândia<br>Boxes 399 e 400 · Brasília, DF</div>
+    <div><b>Atendimento</b>WhatsApp <a id="waTxt" target="_blank" rel="noopener">(61) 90000-0000</a><br>Instagram <a href="https://www.instagram.com/tabacariacearadf/" target="_blank" rel="noopener">@tabacariacearadf</a></div>
+    <div><b>Trocas e aviso legal</b>Troca em até 24 h, só por defeito de fábrica. Venda proibida para menores de 18 anos. Preços e estoque de demonstração.</div>
+  </div>
+</footer>
+
+<div class="bar" id="bar"><button type="button" id="barBtn"><span id="barTxt">Ver pedido</span><small id="barTot"></small></button></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet product" id="pSheet" role="dialog" aria-modal="true" aria-labelledby="pName" aria-hidden="true">
+  <button type="button" class="x" data-close aria-label="Fechar"><svg viewBox="0 0 256 256" fill="currentColor"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></svg></button>
+  <div class="pv">
+    <div class="ph" id="pPh"></div>
+    <div class="bd">
+      <div class="br" id="pBrand"></div>
+      <h3 id="pName"></h3>
+      <div class="prow"><span class="pr" id="pPrice"></span><span class="old" id="pOld"></span></div>
+      <p class="desc" id="pDesc"></p>
+      <div class="facts" id="pFacts"></div>
+      <ul class="notes" id="pNotes"></ul>
+      <div id="pFlavWrap">
+        <div class="lbl"><span id="pFlavLbl">Sabor</span><span id="pFlavCount"></span></div>
+        <div class="flavors" id="pFlav" role="group" aria-label="Escolha a opção"></div>
+      </div>
+      <div class="act">
+        <div class="qty" aria-label="Quantidade"><button type="button" id="qMinus" aria-label="Diminuir">−</button><output id="qVal">1</output><button type="button" id="qPlus" aria-label="Aumentar">+</button></div>
+        <button type="button" class="btn btn-gold" id="pAdd">Adicionar ao pedido</button>
+      </div>
+      <a class="solo" id="pSolo" target="_blank" rel="noopener">Pedir só este produto no WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<div class="sheet cart" id="cSheet" role="dialog" aria-modal="true" aria-labelledby="cTitle" aria-hidden="true">
+  <button type="button" class="x" data-close aria-label="Fechar"><svg viewBox="0 0 256 256" fill="currentColor"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></svg></button>
+  <div class="hd"><h3 id="cTitle">Seu pedido</h3><p id="cSub"></p></div>
+  <div class="items" id="cItems"></div>
+  <div class="ft" id="cFoot">
+    <div class="seg" role="group" aria-label="Como receber">
+      <button type="button" id="mPick" aria-pressed="true">Retirar na loja</button>
+      <button type="button" id="mShip" aria-pressed="false">Receber em casa</button>
+    </div>
+    <div class="row2">
+      <div class="field"><label for="fName">Seu nome</label><input id="fName" autocomplete="given-name" placeholder="Como te chamamos"></div>
+      <div class="field"><label for="fPay">Pagamento</label><select id="fPay"><option>Pix</option><option>Cartão</option><option>Dinheiro</option></select></div>
+    </div>
+    <div class="field" id="addrWrap" hidden><label for="fAddr">Endereço de entrega</label><input id="fAddr" autocomplete="street-address" placeholder="Rua, número, bairro e cidade"></div>
+    <div class="total"><span>Total <small id="cQty"></small></span><span id="cTotal">R$ 0,00</span></div>
+    <a class="btn btn-wa btn-block" id="send" target="_blank" rel="noopener" aria-disabled="true">
+      <svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M152.58,145.23l23,11.48A24,24,0,0,1,152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155ZM232,128A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Z"/></svg>
+      Enviar pedido pelo WhatsApp
+    </a>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/produtos.js"></script>
+<script src="js/catalogo.js"></script>
+</body>
+</html>

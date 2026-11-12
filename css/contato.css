@@ -1,0 +1,57 @@
+/* Página de contato: formulário de proposta. CSS puro, layout com Grid e Flexbox.
+   O cartão "O que acontece depois" não está aqui: ele é feito com Tailwind (css/tailwind.css). */
+.c-topo{min-height:0;padding-bottom:clamp(48px,8vh,88px)}
+.c-topo .wrap{grid-template-columns:1fr}
+.c-topo h1{max-width:14em}
+.c-form{min-height:0;align-items:flex-start}
+.c-form .wrap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(32px,6vw,88px)}
+.c-form h2.serif{font-size:clamp(1.8rem,3vw,2.5rem)}
+.c-form .aviso{margin:10px 0 30px;color:var(--on-l);font-size:.92rem}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.campo{margin-bottom:22px}
+.linha{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.campo label{display:block;font-weight:600;font-size:.94rem;margin-bottom:8px}
+.campo input:not([type=checkbox]),.campo select,.campo textarea{
+  display:block;width:100%;font:inherit;color:var(--ink);background:var(--white);
+  border:1.5px solid rgba(7,30,28,.3);border-radius:2px;padding:13px 14px;min-height:50px}
+.campo textarea{resize:vertical;min-height:132px;line-height:1.5}
+.campo input:hover,.campo select:hover,.campo textarea:hover{border-color:rgba(7,30,28,.6)}
+.campo input:focus-visible,.campo select:focus-visible,.campo textarea:focus-visible{border-color:var(--ink);outline-offset:2px}
+.campo ::placeholder{color:#6d7876}
+.campo [aria-invalid=true]{border-color:#a3261a;background:#fff8f6}
+.erro{margin:7px 0 0;color:#a3261a;font-size:.88rem;font-weight:500}
+.erro:empty{display:none}
+.conta{margin:7px 0 0;font-size:.82rem;color:var(--on-l);text-align:right}
+.conta.perto{color:#a3261a;font-weight:600}
+
+.marca{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:start}
+.marca input{width:22px;height:22px;margin:2px 0 0;accent-color:var(--ink)}
+.marca label{margin:0;font-weight:400;line-height:1.5}
+.marca .erro{grid-column:2}
+
+.c-form form .btn{border:0;cursor:pointer;font-family:inherit;font-size:1rem}
+.nota{margin-top:14px;font-size:.86rem;color:var(--on-l);max-width:34em}
+
+.ok{background:var(--white);border-left:4px solid var(--gold);padding:clamp(22px,4vw,36px)}
+.ok:focus{outline:none}
+.ok h3{font-size:clamp(1.5rem,2.4vw,2rem);margin-bottom:10px}
+.ok>p{color:var(--on-l)}
+.ok dl{margin:22px 0 26px}
+.ok dl div{display:grid;grid-template-columns:9em 1fr;gap:14px;padding:11px 0;border-top:1px solid var(--line-l)}
+.ok dl div:last-child{border-bottom:1px solid var(--line-l)}
+.ok dt{font-size:.86rem;color:var(--on-l)}
+.ok dd{margin:0;overflow-wrap:anywhere;white-space:pre-line}
+.ok .acoes{display:flex;flex-wrap:wrap;gap:12px}
+
+.c-rodape .ft{border-top:0;padding:26px 0}
+.c-rodape a{text-underline-offset:3px}
+
+@media (max-width:920px){
+  .c-form .wrap{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .linha{grid-template-columns:1fr;gap:0}
+  .ok dl div{grid-template-columns:1fr;gap:2px}
+}
+[hidden]{display:none!important}

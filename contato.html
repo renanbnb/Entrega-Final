@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solicitar proposta | ARB Digital</title>
+<meta name="description" content="Conte o que a sua empresa precisa e receba uma proposta da ARB Digital com escopo, prazo e valor fechado.">
+<meta name="theme-color" content="#071E1C">
+<link rel="icon" type="image/webp" href="img/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/contato.css">
+<link rel="stylesheet" href="css/tailwind.css">
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+
+<header class="hd" id="hd">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="ARB Digital, início">
+      <img src="img/logo.webp" alt="" width="512" height="490">
+      <div><b>ARB DIGITAL</b><span>Sites e sistemas para empresas</span></div>
+    </a>
+    <nav class="nav" aria-label="Páginas do site">
+      <a href="index.html#o-que-fazemos">O que fazemos</a>
+      <a href="index.html#metodo">Método</a>
+      <a href="grupo.html">Grupo ARB</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="index.html#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn" aria-current="page" href="contato.html">Solicitar proposta</a>
+    <button class="mb" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><i></i></button>
+  </div>
+  <nav id="menu" aria-label="Páginas do site, celular">
+    <a href="index.html#o-que-fazemos">O que fazemos</a><a href="index.html#metodo">Método</a><a href="grupo.html">Grupo ARB</a><a href="catalogo.html">Catálogo</a><a href="index.html#duvidas">Dúvidas</a>
+    <a class="btn" href="contato.html">Solicitar proposta</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="sec dark hero c-topo" id="topo">
+  <img class="wm" src="img/logo.webp" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div class="t">
+      <a class="grp" href="index.html">ARB Digital</a>
+      <h1 class="serif">Conte o que a sua empresa precisa.</h1>
+      <p class="lede">Com estas informações a gente chega na primeira conversa já sabendo por onde começar. A proposta vem com escopo, prazo e valor fechado.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec paper c-form" id="proposta">
+  <div class="wrap">
+    <div>
+      <h2 class="serif">Dados para a proposta</h2>
+      <p class="aviso">Os campos com <span aria-hidden="true">*</span><span class="vh">asterisco</span> são obrigatórios.</p>
+
+      <form id="form" action="#" method="post">
+        <div class="campo">
+          <label for="nome">Seu nome <span aria-hidden="true">*</span></label>
+          <input id="nome" name="nome" type="text" autocomplete="name" required minlength="3" aria-describedby="nome-erro">
+          <p class="erro" id="nome-erro" aria-live="polite"></p>
+        </div>
+
+        <div class="campo">
+          <label for="empresa">Nome da empresa</label>
+          <input id="empresa" name="empresa" type="text" autocomplete="organization">
+        </div>
+
+        <div class="linha">
+          <div class="campo">
+            <label for="email">E-mail <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="voce@empresa.com.br" aria-describedby="email-erro">
+            <p class="erro" id="email-erro" aria-live="polite"></p>
+          </div>
+          <div class="campo">
+            <label for="whats">WhatsApp <span aria-hidden="true">*</span></label>
+            <input id="whats" name="whats" type="tel" autocomplete="tel-national" inputmode="numeric" required pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(61) 90000-0000" aria-describedby="whats-erro">
+            <p class="erro" id="whats-erro" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="tipo">O que você precisa <span aria-hidden="true">*</span></label>
+          <select id="tipo" name="tipo" required aria-describedby="tipo-erro">
+            <option value="">Escolha uma opção</option>
+            <option>Site institucional</option>
+            <option>Página de vendas</option>
+            <option>Catálogo digital</option>
+            <option>Sistema sob medida</option>
+            <option>Ainda não sei, quero conversar</option>
+          </select>
+          <p class="erro" id="tipo-erro" aria-live="polite"></p>
+        </div>
+
+        <div class="campo">
+          <label for="msg">Fale um pouco do seu negócio <span aria-hidden="true">*</span></label>
+          <textarea id="msg" name="msg" rows="5" required minlength="20" maxlength="600" aria-describedby="msg-conta msg-erro"></textarea>
+          <p class="conta" id="msg-conta">0 de 600 caracteres</p>
+          <p class="erro" id="msg-erro" aria-live="polite"></p>
+        </div>
+
+        <div class="campo marca">
+          <input id="aceite" name="aceite" type="checkbox" required aria-describedby="aceite-erro">
+          <label for="aceite">Aceito que a ARB Digital entre em contato comigo sobre este pedido. <span aria-hidden="true">*</span></label>
+          <p class="erro" id="aceite-erro" aria-live="polite"></p>
+        </div>
+
+        <button class="btn" type="submit">Enviar pedido de proposta</button>
+        <p class="nota">Os dados não ficam guardados no site. Depois de conferir o resumo, você envia pelo seu e-mail.</p>
+      </form>
+
+      <div class="ok" id="ok" hidden tabindex="-1">
+        <h3 class="serif">Pedido pronto para enviar.</h3>
+        <p>Confira os dados abaixo. Se estiver tudo certo, abra o seu e-mail com a mensagem já preenchida.</p>
+        <dl id="resumo"></dl>
+        <div class="acoes">
+          <a class="btn" id="mail" href="mailto:contato@consultoriaarb.com.br">Abrir no meu e-mail</a>
+          <button class="btn line" type="button" id="voltar">Corrigir os dados</button>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      COMPONENTE FEITO COM FRAMEWORK (Tailwind CSS): o cartão "O que acontece depois".
+      Tudo dentro do <aside> abaixo usa só classes do Tailwind. O mesmo cartão, escrito em CSS puro, ficaria assim:
+
+      .depois        { align-self: start; background-color: #fff; border: 1px solid rgb(7 30 28 / 0.1);
+                       border-radius: 0.25rem; padding: 1.75rem; box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); }
+      .depois h2     { margin: 0; font-family: "Playfair Display", Georgia, serif; font-size: 1.5rem;
+                       font-weight: 400; line-height: 1.25; color: #071E1C; }
+      .depois ol     { margin: 1.25rem 0 0; padding: 0; list-style: none;
+                       display: flex; flex-direction: column; gap: 1rem; }
+      .depois li     { display: flex; align-items: flex-start; gap: 1rem; }
+      .depois .num   { flex: none; display: grid; place-items: center; width: 2.25rem; height: 2.25rem;
+                       border-radius: 9999px; background-color: #C9A227; color: #071E1C;
+                       font-size: 0.875rem; font-weight: 600; }
+      .depois p      { margin: 0; font-size: 0.95rem; line-height: 1.625; color: #3E4B48; }
+      .depois p b    { display: block; font-weight: 600; color: #071E1C; }
+      @media (min-width: 921px) { .depois { position: sticky; top: 6rem; } }
+
+      O que o framework fez por nós: cada classe é uma regra pronta de uma propriedade só (p-7 é o padding de 1.75rem,
+      gap-4 é o gap de 1rem, rounded-full é o border-radius de 9999px), e o prefixo min-[921px]: gera o @media.
+      Não foi preciso inventar nome de classe nem abrir o arquivo de CSS para montar o cartão.
+    -->
+    <aside class="self-start bg-white border border-solid border-ink/10 rounded p-7 shadow-sm min-[921px]:sticky min-[921px]:top-24" aria-labelledby="depois">
+      <h2 id="depois" class="m-0 font-serif text-2xl font-normal leading-tight text-ink">O que acontece depois</h2>
+      <ol class="mt-5 mb-0 p-0 list-none flex flex-col gap-4">
+        <li class="flex items-start gap-4">
+          <span class="flex-none grid place-items-center w-9 h-9 rounded-full bg-gold text-ink text-sm font-semibold" aria-hidden="true">1</span>
+          <p class="m-0 text-[0.95rem] leading-relaxed text-muted"><b class="block font-semibold text-ink">Lemos o seu pedido</b>Quem responde é quem vai desenvolver o projeto.</p>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="flex-none grid place-items-center w-9 h-9 rounded-full bg-gold text-ink text-sm font-semibold" aria-hidden="true">2</span>
+          <p class="m-0 text-[0.95rem] leading-relaxed text-muted"><b class="block font-semibold text-ink">Marcamos uma conversa</b>Uma reunião para entender o negócio, o público e o objetivo.</p>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="flex-none grid place-items-center w-9 h-9 rounded-full bg-gold text-ink text-sm font-semibold" aria-hidden="true">3</span>
+          <p class="m-0 text-[0.95rem] leading-relaxed text-muted"><b class="block font-semibold text-ink">Você recebe a proposta</b>Escopo, páginas, prazo e valor fechado, por escrito.</p>
+        </li>
+      </ol>
+    </aside>
+  </div>
+</section>
+</main>
+
+<footer class="dark c-rodape">
+  <div class="wrap">
+    <div class="ft">
+      <div><img src="img/logo.webp" alt=""><span>ARB Digital, com a ARB Consultoria Empresarial como filial</span></div>
+      <span>E-mail: <a href="mailto:contato@consultoriaarb.com.br">contato@consultoriaarb.com.br</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+<script src="js/contato.js"></script>
+</body>
+</html>

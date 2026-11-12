@@ -1,0 +1,12 @@
+{
+  "name": "arb-digital-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site da ARB Digital. O npm só é necessário para recompilar o componente em Tailwind.",
+  "scripts": {
+    "build": "tailwindcss -c tailwind.config.js -i css/tailwind.input.css -o css/tailwind.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}

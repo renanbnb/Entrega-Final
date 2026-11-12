@@ -1,0 +1,165 @@
+.sticky {
+  position: sticky
+}
+
+.m-0 {
+  margin: 0px
+}
+
+.mb-0 {
+  margin-bottom: 0px
+}
+
+.mt-5 {
+  margin-top: 1.25rem
+}
+
+.block {
+  display: block
+}
+
+.flex {
+  display: flex
+}
+
+.grid {
+  display: grid
+}
+
+.hidden {
+  display: none
+}
+
+.h-9 {
+  height: 2.25rem
+}
+
+.w-9 {
+  width: 2.25rem
+}
+
+.flex-none {
+  flex: none
+}
+
+.list-none {
+  list-style-type: none
+}
+
+.flex-col {
+  flex-direction: column
+}
+
+.place-items-center {
+  place-items: center
+}
+
+.items-start {
+  align-items: flex-start
+}
+
+.gap-4 {
+  gap: 1rem
+}
+
+.self-start {
+  align-self: flex-start
+}
+
+.rounded {
+  border-radius: 0.25rem
+}
+
+.rounded-full {
+  border-radius: 9999px
+}
+
+.border {
+  border-width: 1px
+}
+
+.border-solid {
+  border-style: solid
+}
+
+.border-ink\/10 {
+  border-color: rgb(7 30 28 / 0.1)
+}
+
+.bg-gold {
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 162 39 / var(--tw-bg-opacity, 1))
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1))
+}
+
+.p-0 {
+  padding: 0px
+}
+
+.p-7 {
+  padding: 1.75rem
+}
+
+.font-serif {
+  font-family: "Playfair Display", Georgia, serif
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem
+}
+
+.text-\[0\.95rem\] {
+  font-size: 0.95rem
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem
+}
+
+.font-normal {
+  font-weight: 400
+}
+
+.font-semibold {
+  font-weight: 600
+}
+
+.leading-relaxed {
+  line-height: 1.625
+}
+
+.leading-tight {
+  line-height: 1.25
+}
+
+.text-ink {
+  --tw-text-opacity: 1;
+  color: rgb(7 30 28 / var(--tw-text-opacity, 1))
+}
+
+.text-muted {
+  --tw-text-opacity: 1;
+  color: rgb(62 75 72 / var(--tw-text-opacity, 1))
+}
+
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+@media (min-width: 921px) {
+  .min-\[921px\]\:sticky {
+    position: sticky
+  }
+
+  .min-\[921px\]\:top-24 {
+    top: 6rem
+  }
+}
